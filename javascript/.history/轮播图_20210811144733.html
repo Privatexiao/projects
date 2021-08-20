@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #outer{
+        width: 820px;
+        height: 333px;
+        margin: 100px auto;
+        background-color: yellow;
+        padding: 10px 0;
+        position: relative;
+        overflow: hidden;
+    }
+    #outer img{
+        width: 800px;
+        height: 333px;
+    }
+    #imgList{
+        list-style: none;
+        position: absolute;
+        left: 0px;
+    }
+    #imgList li{
+        float: left;
+        margin: 0 10px;
+    }
+    #navDiv{
+        position: absolute;
+        top: 310px;
+
+    }
+    #navDiv a{
+        width: 15px;
+        height: 15px;
+        float: left;
+        background-color: red;
+        margin: 0 5px;
+        /* 透明度 */
+        opacity: 0.5;
+        /* 兼容IE8 */
+        filter: alpha(opacity=50);
+    }
+</style>
+<script>
+    window.onload = function(){
+        
+        let imgList = document.getElementById("imgList");
+        let imgArr = document.getElementsByTagName("img");
+        // 设置ul的整体宽度
+        imgList.style.width = 820*imgArr.length+"px";
+        // 设置导航按钮居中
+        let nav
+    };
+</script>
+<body>
+    <div id="outer">
+        <ul id="imgList">
+            <li>
+                <img src="img/a.jpg">
+            </li>
+            <li>
+                <img src="img/b.jpg">
+            </li>
+            <li>
+                <img src="img/c.jpg">
+            </li>
+            <li>
+                <img src="img/d.jpg">
+            </li>
+            <li>
+                <img src="img/e.jpg">
+            </li>
+        </ul>
+        <div id="navDiv">
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </div>
+</body>
+</html>

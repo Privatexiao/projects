@@ -1,0 +1,11 @@
+/* 全局配置 */
+body{
+    width: 667px;
+    height: 375px;
+    min-width: 667px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+

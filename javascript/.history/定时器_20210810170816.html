@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+    <script>
+        // 图片切换
+        window.onload=function(){
+            
+            let prev = document.getElementById("prev");
+            let next = document.getElementById("next");
+
+            let img =document.getElementsByName("img1")[0];
+            
+            let imgArr =["img/a.jpg","img/b.jpg","img/c.jpg","img/d.jpg","xmscimg/e.jpg"];
+            
+            let index = 0;
+
+            prev.onclick = function(){
+                index--;
+                if(index<0){
+                    index=imgArr.length-1;
+                }
+                img.src = imgArr[index];
+            };
+
+            next.onclick = function(){
+                index++;
+                if (index>imgArr.length-1){
+                    index=0;
+                }
+                img.src = imgArr[index];
+            };
+
+            // 定时器
+            setInterval(function(){
+                index++;
+                if(index>=imgArr.length){
+                    index=0;
+                }
+                img.src = imgArr[index];
+            },2000);
+        };
+    </script>
+</head>
+<body>
+    <div class="CaiDan_right">
+        <ul class="CaiDan_right_img">
+            <li><img name="img1" src="xmscimg/a.jpg" alt="..."></li>
+        </ul>
+        <button id="prev" class="prev"><strong>&lt;</strong></a></button>
+        <button id="next" class="next"><strong>&gt;</strong></a></button>
+        <ul class="points">
+            <li><a href="javaScript:"></a></li>
+            <li class="active"><a href="javaScript:"></a></li>
+            <li><a href="javaScript:"></a></li>
+            <li><a href="javaScript:"></a></li>
+            <li><a href="javaScript:"></a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* 全局配置 */
+body{
+    width: 375px;
+    height: 667px;
+    min-width: 375px;
+    background-color: rgb(245,245,245);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,ol{
+    list-style: none;
+}
+
+/* 上面状态栏 */
+.bar {
+    width: 100%;
+    height: 85px;
+    float: left;
+    border-bottom: 1px solid rgba(136, 136, 136, 0.438);
+}
+/* 头像 */
+.bar .HeadPortrait img{
+    margin: 10px 0 0 10px;
+    float: left;
+    width: 65px;
+    height: 65px;
+    border: 1px solid rgba(136, 136, 136, 0.438);
+    border-radius: 50%;
+}
+/* 未登录 */
+.bar .NoHeadPortrait{
+    float: left;
+    font-size: 26px;
+    font-weight:bold;
+    line-height: 80px;
+    margin-left: 15px;
+}
+/* 点击登录 */
+.bar .TheLogin a{
+    float: right;
+    line-height: 80px;
+    font-size: 17px;
+    margin-right: 20px;
+    color: rgba(114, 114, 114, 0.87);
+}
+
+/* 左边图标状态栏 */
+.LeftBar{
+    margin: 15px;
+    float: left;
+}
+.LeftBar ul li{
+    margin: 10px;
+    cursor: pointer;
+}
+.LeftBar ul li img{
+    width: 45px;
+    height: 45px;
+}
+.LeftBar ul .fot1 img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-top: 13px;
+}
+.LeftBar ul .fot2 img{
+    width: 80px;
+    height: 80px;
+    margin: 45px 10px 10px -15px;
+}
+
+
+/* 新手教程 */
+.TheTutorial{
+    float: left;
+    width: 80px;
+    height: 60px;
+}
+.TheTutorial img{
+    width: 250px;
+    height: 60px;
+}

@@ -1,0 +1,9 @@
+
+body{
+    width: 667px;
+    height: 375px;
+    min-width: 667px;
+}
+a{
+    text-decoration: none;
+}

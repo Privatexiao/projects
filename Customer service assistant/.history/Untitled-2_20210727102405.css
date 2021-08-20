@@ -1,0 +1,23 @@
+/* 全局配置 */
+a{
+    color: rgb(104, 104, 104);
+    text-decoration: none;
+}
+ul ol{
+    list-style: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    
+    min-width: 1530px;
+    width: 1530px;
+    height: 1500px;
+}
+
+
+.body .head .head_left a{
+    width: 20px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/vue.js" type="text/javascript"></script>
+    <script src="js/require.js" type="text/javascript"></script>
+    <link href="css/index.css"  rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div class="bar">
+            <div class="HeadPortrait"><a href="javaScript:"><img :src="userInfo.avatar"></div><span class="NoHeadPortrait">{{NoHeadPortrait}}</span></a>
+            <div class="TheLogin">
+                <a href="javaScript:">{{HeadPortrait}}<img src="img/Put It away.png"></a>
+            </div>
+        </div>
+        <div class="LeftBar">
+            <ul>
+                <!-- <li v-for="(item, index) of list"
+                    :key="index"
+                    :class="{active:index == num}"
+                    @click="addClassName(index)"
+        >
+        
+        <img v-show="num!=index" :class="item.icon" src="img/新手教程.png"></img>
+        <img v-show="num==index" :class="item.active" src="img/新手教程two.png"></img>
+
+        <img v-show="num!=index" :class="item.icon" src="img/吃货语录.png"></img>
+        <img v-show="num==index" :class="item.active" src="img/吃货语录two.png"></img>
+        
+        <img v-show="num!=index" :class="item.icon" src="img/外卖红包.png"></img>
+        <img v-show="num==index" :class="item.active" src="img/外卖红包two.png"></img>
+
+        <img v-show="num!=index" :class="item.icon" src="img/饭补活动.png"></img>
+        <img v-show="num==index" :class="item.active" src="img/饭补活动two.png"></img>
+
+        <img v-show="num!=index" :class="item.icon" src="img/大作战.png"></img>
+        <img v-show="num==index" :class="item.active" src="img/大作战two.png"></img>
+
+        <img v-show="num!=index" :class="item.icon" src="img/今天吃什么.png"></img>
+        <img v-show="num==index" :class="item.active" src="img/今天吃什么two.png"></img>
+        
+                </li> -->
+                <li><a href="#top1"><img src="img/新手教程two.png"></a></li>
+                <li><a name="top2"><img src="img/吃货语录.png"></a></li>
+                <li><a name="top3"><img src="img/外卖红包.png"></a></li>
+                <li><a name="top4"><img src="img/饭补活动.png"></a></li>
+                <li><a name="top5"><img src="img/大作战.png"></a></li>
+                <li><a name="top6"><img src="img/今天吃什么.png"></a></li>
+                <li><a name="top7"><img src="img/客服微信.png"></a></li>
+                <li class="fot1"><a name="top8"><img src="img/头像.png"></a></li>
+                <li class="fot2"><a name="top9"><img src="img/小飞机.png"></a></li>
+            </ul>
+        </div>
+
+        <div class="TheTutorial"><a name="top1">
+            <h3>-_——&nbsp;新手教程&nbsp;--</h3>
+            <div class="xsjc_bj"><img src="img/新手教程nr.png"></div>
+        </a></div>
+    </div>
+
+
+
+    <script>
+        let app = new Vue({
+            el:'#app',
+            data:{
+                NoHeadPortrait:"未登录",
+                HeadPortrait:"点击登录",
+                userInfo:{
+                    avatar:'img/头像.png'
+                },
+        
+    //     list: [
+    //     {
+    //       icon: "iconfont icon-wode",  //原始显示的图标
+    //       active: "iconfont icon-shouye", //点击之后要显示的图标
+    //     },
+    //     {
+    //     icon: "iconfont icon-icon",
+    //     active: "iconfont icon-gouwuche",
+    //     },
+    //     {
+    //     icon: "iconfont icon-gouwuche",
+    //     active: "iconfont icon-icon",
+    //     },
+    //     {
+    //     icon: "iconfont icon-wode",
+    //     active: "iconfont icon-shouye",
+    //     }
+    // ],
+    // num: 0,
+    // tabName: ""
+    // },
+    // methods: {
+    // addClassName: function(index) {
+    //     console.log(index);
+    //     this.num = index;
+    // }
+
+            }
+        })
+    </script>
+</body>
+</html>

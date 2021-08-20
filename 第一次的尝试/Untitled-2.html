@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body >
+	目录
+	<ol>
+	<li><a name="top1">第一章</li></a>
+	<li><a name="top2">第二章</a></li>
+	<li><a name="top3">第三章</a></li>
+	</ol>
+	
+	
+	<table width="300" border="2">
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+		<td>4</td>
+		<td>5</td>
+		</tr>
+	<tr>
+		<td>6</td>
+		<td>7</td>
+		<td>8</td>
+		<td>9</td>
+		<td>10</td>
+		</tr>
+	</table>
+	<br/>
+	
+	
+	<table width="300" border="3" bordercolor="#0090FF" bgcolor="#31FF8B" cellspacing="1" cellpadding="2">
+		<caption>教师信息表</caption>
+	<thead align="center">
+		<tr>
+		<td colspan="3">这里是表头</td>
+		</tr>
+		<tr>
+		<th>工号</th>
+		<th>姓名</th>
+		<th>性别</th>
+		</tr>
+	</thead>
+	<tbody align="center">
+		<tr>
+		<td bgcolor="#E1FF53">1111</td>
+		<td>张三</td>
+		<td>男</td>
+		</tr>
+		<tr align="center" valign="top" bgcolor="#FF4B4E" height="100px">
+		<td>2222</td>
+		<td>李四</td>
+		<td>女</td>
+		</tr>
+	</tbody>
+	<tfoot align="center">
+		<tr>
+		<td colspan="3">这里是表尾</td>
+		</tr>
+		</tfoot>
+	</table>
+	
+	<table border="2" align="center">
+	<caption>大奖比赛登记表</caption>
+		<tr align="center">
+			<th width="100">报名号</th>
+			<td width="100">2254</td>
+			<th width="100">性别</th>
+			<td width="100">女</td>
+			
+		<td rowspan="2">
+			<img src="file:///D:/%E6%AD%A4%E7%94%B5%E8%84%91/%E5%9B%BE%E7%89%87/Screenshots/c.png" width="150" height="300">
+		</td>
+			</tr>
+		<tr>
+		<th>姓名</th>
+		<td colspan="3" align="center"><a href="#">李四</a>
+			</td>
+		</tr>
+		<tr>
+			<td>推荐单位</td>
+			<td colspan="5">武汉科技有限公司</td>
+		</tr>
+	</table>
+	
+	<form action="file:///D:/%E6%AD%A4%E7%94%B5%E8%84%91/%E5%9B%BE%E7%89%87/Screenshots/3.txt" method="post">
+		请输入您的真实姓名：<input type="text" name="username" maxlength="10"><br/>
+		您的主页的网站：<input type="text" name="webaddress" value="http://"><br/>
+		您的邮箱：<input type="text" name="email" ><br/>
+		密码：<input type="password" name="password"><br/>
+		<input type="submit" value="提交">
+		<input type="reset" value="重置"><br/>
+		</form>
+	<form action="file:///D:/%E6%AD%A4%E7%94%B5%E8%84%91/%E5%9B%BE%E7%89%87/Screenshots/3.txt" method="post">
+	选择一种你喜欢的水果：<br/>
+		<input type="radio" name="sg" value="banana">香蕉<br/>
+		<input type="radio" name="sg" value="apple">苹果<br/>
+		<input type="radio" name="sg" value="orange">橘子<br/>
+		你喜欢哪几种运动：<br/>
+		<input type="checkbox" name="yd" value="football">足球<br/>
+		<input type="checkbox" namr="yd" value="basketball" >篮球<br/>
+		<input type="checkbox" name="yd" value="volleyball" >排球<br/>
+		<input type="submit" value="提交">
+		<input type="reset" value="重新输入">
+		<input type="hidden" name="qw" value="开始">
+	</form>
+	
+	出生年：
+	<select name="birthYear">
+	<option value="1995">1995
+	<option value="1996">1996
+	<option value="1997">1997
+	<option value="1998">1998
+	<option value="1999" selected>1999
+	<option value="2000">2000
+	<option value="2001">2001
+	<option value="2002">2002
+	</select>
+	月:<select name="Ye">
+	<option value="1">1
+	<option value="2">2
+	<option value="3">3
+	<option value="4">4
+	<option value="5" selected>5
+	<option value="6">6
+	<option value="7">7
+	<option value="8">8
+	<option value="9">9
+	<option value="10">10	
+	<option value="11">11
+	<option value="12">12	
+	</select>	
+	<br/>
+	备注：<br/>
+	<textarea name="bz" cols="30" rows="3" wrap="physical">
+	</textarea>
+	<br/>
+	<label>请选择合适的编辑器：</label>
+		<input type="text" id="txt_ide" list="ide">
+			<datalist id="ide">
+				<option value="Brackets"></option>
+				<option value="Coda"></option>
+				<option value="Jedit"></option>
+				<option value="Komodo"></option>
+				<option value="xcode"></option>
+				<option value="Vim"></option>
+				<option value="Brackets"></option>
+				<option value="Coda"></option>
+				<option value="Jedit"></option>
+				<option value="Komodo"></option>
+				<option value="xcode"></option>
+				<option value="Vim"></option>
+	</datalist>
+	<br/>
+	<input type="datetime-local" name="month" value="2003-09" min="2000-01" max="2008-12">
+	<input type="color" value="#00ff00" name="color">
+	<br/>
+	<button>这是一个button按钮</button>
+	<button onClick="alert('即将加入京东购物页面'); window.open('http://www.jd.com')">京东</button>
+	<br/>
+	<details open>
+		<summary>显示在线用户</summary>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+	</details>
+	下载进度：<progress value="33" max="100"></progress>
+	
+	<p>空间剩余大小：<meter min="0" max="1024" value="500">500/1024</meter>500/1024G</p>
+	<p>你的得分是：<meter min="0" max="100" high="90" optimum="100" value="91">91分</meter>91分</p>
+	
+	<table align="center" width="500" border="0" cellpadding="2" cellspacing="0">
+	<caption align="center"><h2>学生注册信息</h2></caption>
+	<form action="file:///D:/%E6%AD%A4%E7%94%B5%E8%84%91/%E5%9B%BE%E7%89%87/Screenshots/3.txt" method="post">
+	<tr>
+		<th>姓名：</th>
+		<td><input type="text" name="xm"></td>
+		</tr>
+		<tr>
+		<th>性别：</th>
+			<td><input type="radio" name="xb" value="1">男
+			<input type="radio" name="xb" value="2">女
+			<input type="radio" name="xb" value="3">保密</td>
+		</tr>
+		<tr>
+		<th>学历：</th>
+			<td>
+				<select name="xl">
+			<option>--请选择--</option>
+			<option value="1">高中</option>
+			<option value="2">大专</option>
+			<option value="3">	本科</option>
+			<option value="4">研究生	</option>
+			<option value="5">其他</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+		<th>选修课程：</th>
+			<td>
+			<input type="checkbox" name="xxk" value="6">Linux
+			<input type="checkbox" name="xxk" value="7">Apache
+			<input type="checkbox" name="xxk" value="8">Mysql
+			<input type="checkbox" name="xxk" value="9">PHP
+			</td>
+		</tr>
+		<tr>
+			<th>自我评价：</th>
+			<td>
+				<textarea name="zwpj" cols="40" rows="4" wrap="physical"></textarea>
+			</td>
+		</tr>
+		
+		<tr >
+			
+			<td colspan="2" align="center">
+				<input type="submit" name="submit" value="提交">
+				<input type="reset" name="reset" value="重新输入">
+			</td>
+		</tr>
+	</form>
+</table>
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/vue.js" type="text/javascript"></script>
+    <link href="css/Untitled-2.css"  rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div class="bar">
+            <div class="HeadPortrait"><a href="javaScript:"><img :src="userInfo.avatar"></div><span class="NoHeadPortrait">{{NoHeadPortrait}}</span></a>
+            <div class="TheLogin">
+                <a href="javaScript:">{{HeadPortrait}}<img src="img/侧边栏图标/Put It away.png"></a>
+            </div>
+        </div>
+        <div class=""
+    </div>
+
+
+
+    <script>
+        let app = new Vue({
+            el:'#app',
+            data:{
+                NoHeadPortrait:"未登录",
+                HeadPortrait:"点击登录",
+                userInfo:{
+                    avatar:'img/头像.png'
+                }
+            }
+        })
+    </script>
+</body>
+</html>

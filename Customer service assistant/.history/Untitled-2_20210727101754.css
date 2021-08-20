@@ -1,0 +1,13 @@
+/* 全局配置 */
+a{
+    color: rgb(104, 104, 104);
+    text-decoration: none;
+}
+ul ol{
+    list-style: none;
+}
+body{
+    min-width: 100px;
+    width: 1000px;
+    background-color: aqua;
+}

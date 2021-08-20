@@ -1,0 +1,184 @@
+/* 全局配置 */
+a{
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+em{
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    min-width: 1530px;
+    width: 1530px;
+    height: 1500px;
+}
+
+/* 状态栏 */
+.body .head{
+    width: 100%;
+    height: 57px;
+    background-color: #7f8fef;
+}
+/* 芝麻客服 */
+.head .head_left a{
+    margin-right: 60px;
+    line-height: 57px;
+    font-size: 18px;
+    float: left;
+    color: white;
+}
+/* 芝麻客服图片 */
+.head .head_left img{
+    position: relative;
+    top: 14px;
+    left: -10px;
+    float: left;
+    margin-left:60px;
+    
+}
+/* 客服系统 */
+.head .head_center .active a{
+    color: white;
+}
+/* 客服系统下划线 */
+.head .head_center .active img{
+    position: absolute;
+    width: 45px;
+    top: 22px;
+    left: 265px;
+}
+/* 客服系统状态栏 */
+.head .head_center a{
+    color: #d2dcfa;
+    font-size: 16px;
+    float: left;
+    line-height: 57px;
+    margin: 0 35px;
+}
+.head .head_right{
+    margin-right: 50px;
+}
+
+/* 账号数字 */
+.head .head_right span,a{
+    font-size: 15px;
+    float: right;
+    font-size: 13px;
+    line-height: 57px;
+    color: white;
+    margin-right: 8px;
+}
+
+/* 客服消息 */
+.head .head_right span a{
+    letter-spacing: 1px;
+    line-height: normal;
+    font-size: 13px;
+    margin-top: 12px;
+    padding: 6px 9px;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+/* 账号右边三角形 */
+.head .head_right span .head_right_sjx{
+    position:absolute;
+    top: 25px;
+    right: 24px;
+    border: 6px solid transparent;
+    border-bottom: none;
+    border-top-color: rgb(255, 255, 255);
+}
+.head a:hover{
+    color: white;
+}
+
+/* 二级状态栏 */
+.navbar{
+    height: 55px;
+    width: 100%;
+    float: left;
+    
+}
+
+.navbar ul a{
+    line-height: normal;
+    color: black;
+    float: left;
+    margin: 12px;
+    border-radius: 30px;
+}
+.navbar ul .navbar_img1 a{
+    padding: 5px 18px;
+    color: #829cff;
+    border: 1px solid #829cff;
+}
+.navbar ul .navbar_img2 a{
+    padding: 7px 13px;
+    background-color: #8eb4ff;
+    color: white;
+}
+.navbar ul .navbar_img3 a{
+    padding: 7px 13px;
+    color: black;
+    background-color: #f2f4f5;
+}
+
+.navbar ul .navbar_img1 img,.navbar_img3 img{
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 3px;
+    margin-right: 8px;
+}
+
+
+/* 左边竖目录 */
+.left_body{
+    float: left;
+    width: 250px;
+    height: 1080px;
+    background-color: #ffffff;
+    position: relative;
+}
+.left_body ul li{
+    margin: 20px 0;
+    text-align: left;
+    position: relative;
+    left: 55px;
+}
+.left_body ul li .left_body_imgleft{
+    position: relative;
+    top: 5px;
+    margin-right: 8px;
+}
+.left_body ul li .left_body_imgright{
+    position: absolute;
+    right: 80px;
+    margin-top: 10px;
+}
+.left_body ul li:hover{
+    color: #8eb4ff;
+    cursor: pointer;
+}
+
+.left_body .left_body_show{
+    height: 310px;
+}
+.left_body .left_body_show li{
+    margin: 0;
+    padding: 10px 100px;
+    /* position: relative;
+    left: 83px; */
+    width: 100px;
+}
+
+.left_body .left_body_show li:hover{
+    background-color: #f6f5fa;
+    border-right: 4px solid#8eb4ff;
+}

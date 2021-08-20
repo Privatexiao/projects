@@ -1,0 +1,197 @@
+/* 全局样式 */
+body{
+    width: 100%;
+    min-width: 1500px;
+    height: 1000px; 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+
+/* 顶部状态栏 */
+.ztl{
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+}
+.ztl_left_select li{
+    float: left;
+    margin: 0 8px;
+    line-height: 40px;
+    font-size: 12px;
+}
+.ztl_left_select{
+    margin-left: 50px;
+}
+.ztl_left_select span{
+    color:#424242;
+}
+.ztl li a:hover{
+    color: #FF6700;
+
+}
+.ztl_left_select li a{
+    display: block;
+}
+.ztl_left{
+    margin: 0 auto;
+}
+.ztl_right_rig li{
+    float: left;
+    margin-left: 20px;
+    font-size: 12px;
+    
+}
+.ztl_gwc a{
+    float: right;
+    width: 120px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    background-color: rgba(77, 77, 77, 0.877);;
+    margin-right: 50px;
+}
+.ztl_gwc:hover a{
+    color:#FF6700;
+    background-color: white;
+}
+
+.ztl_right{
+    float: right; 
+    padding-right: 30px;
+}
+.ztl_right_rig li{
+    line-height: 40px;
+}
+
+
+
+.app{
+    position: relative;
+}
+li:hover>.app::after{
+    content: '';
+    position: absolute;
+    bottom:  0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top: none;
+    border-bottom-color: rgb(255, 255, 255);
+}
+/* 小米商城APP弹出窗 */
+.app .qrc{
+    display: none;
+    position: absolute;
+    left: -38px;
+    width: 134px;
+    height: 148px;
+    line-height: 10px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #fff;
+    box-shadow:0 0 10px rgba(0,0,0,.3);
+}
+li:hover>.app .qrc{
+    display: block;
+}
+.app .qrc img{
+    widows: 90px;
+    margin: 12px;
+    margin-bottom: 10px;
+}
+
+
+
+/* 购物车下拉窗 */
+.ztl_gwc .gwc_gwc{
+    display: none;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    text-align: center;
+    line-height: 140px;
+    width: 300px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+.ztl_gwc:hover>li .gwc_gwc{
+    display: block;
+}
+
+.logo_left{
+    width: 100%;
+    height: 120px;
+}
+/* logo一行 */
+.logo_left .logo img{
+    float: left;
+    width: 69px;
+    height: 69px;
+    margin: 20px 50px;
+}
+.logo_left .center .cen{
+    margin-left: 230px;
+}
+.logo_left .center li{
+    float: left;
+    margin: 50px 10px;
+}
+.logo_left .center a{
+    color: black;
+}
+
+
+/* 搜索框 */
+.right_ssk{
+    float: right;
+    width: 380px;
+    margin:41px -18px;
+}
+.right_ssk .ssk_itn{
+    float: left;
+    display: block;
+    width: 260px;
+    height: 45px;
+    border:1px solid rgb(189, 189, 189);
+}
+.right_ssk img{
+    display: block;
+    width: 49px;
+    height: 45px;
+    border: 1px solid rgb(189, 189, 189);
+    border-left-style: none;
+}
+.logo_left .center a:hover{
+    color: #FF6700;
+}
+
+
+/* 商品介绍菜单 */
+.shangPinJieShaoCaiDan{
+    width: 1333px;
+    height: 573px;
+    margin: 0 auto;
+    background-color: blanchedalmond;    /* 等会记得删除 */
+}
+.shangPinJieShaoCaiDan .CaiDan_left{
+        width: 290px;
+        height: 573px;
+}
+.CaiDan_left li{
+    text-align: center;
+    mar
+}

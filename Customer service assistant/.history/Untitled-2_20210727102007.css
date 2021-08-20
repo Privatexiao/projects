@@ -1,0 +1,12 @@
+/* 全局配置 */
+a{
+    color: rgb(104, 104, 104);
+    text-decoration: none;
+}
+ul ol{
+    list-style: none;
+}
+body{
+    
+    background-color: rgb(151, 205, 255);
+}

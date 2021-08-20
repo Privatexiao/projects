@@ -1,0 +1,49 @@
+/* 全局配置 */
+a{
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+em{
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    min-width: 1530px;
+    width: 1530px;
+    height: 1500px;
+}
+
+.body .head{
+    width: 100%;
+    height: 50px;
+    background-color: #7f8fef;
+}
+.head .head_left a{
+    margin: 0 60px;
+    line-height: 50px;
+    font-size: 18px;
+    float: left;
+    color: white;
+}
+.head .head_center .active a{
+    color: white;
+}
+.head .head_center a{
+    color: #d2dcfa;
+    font-size: 16px;
+    float: left;
+    line-height: 50px;
+    margin: 0 35px;
+}
+.head .head_right span{
+    font-size: 16px;
+    float: right;
+    line-height: 50px;
+    color: white;
+}
